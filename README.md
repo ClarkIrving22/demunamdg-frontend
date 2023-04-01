@@ -2,9 +2,9 @@
 I. Requeriments to run the project: Node JS version: 18.12.0
 
 II. Step to Run the project:
-
 Commands:
 1. npm install
+2. npm install react-pro-sidebar
 2. npm run dev
 
 
