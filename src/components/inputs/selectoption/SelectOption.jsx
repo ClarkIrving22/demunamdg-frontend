@@ -4,8 +4,8 @@ const SelectOption = ({
     items=[]
 }) => {
     return(
-        <div className="div-selectoption">
-            <select className="selectoption">
+        <div className="div-selectoption-root">
+            <select className="selectoption-root">
                 {items.map(function(element){
                     return (<option value={element}>{element}</option>);
                 })}

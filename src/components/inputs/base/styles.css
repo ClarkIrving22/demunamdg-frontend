@@ -1,4 +1,4 @@
-.inputbase {
+.inputbase-root {
     appearance: none;
 
     width: 100%;
@@ -15,7 +15,16 @@
     box-sizing:border-box;
 }
 
-.inputbase:focus {
+.inputbase-root:focus {
+    border: 2px solid var(--blue_grey_300) !important;
+    box-shadow: 0 0 5px var(--blue_grey_300) !important;
+    -moz-box-shadow: 0 0 5px var(--blue_grey_300) !important;
+    -webkit-box-shadow: 0 0 5px var(--blue_grey_300) !important;
+    outline-offset: 0px !important;
+    outline: none !important;
+}
+
+.inputbase-root:hover {
     border: 2px solid var(--blue_grey_300) !important;
     box-shadow: 0 0 5px var(--blue_grey_300) !important;
     -moz-box-shadow: 0 0 5px var(--blue_grey_300) !important;

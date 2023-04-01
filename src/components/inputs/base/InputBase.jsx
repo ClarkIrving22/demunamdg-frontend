@@ -4,7 +4,7 @@ const InputBase = ({
     placeholder=''
 }) => {
     return(
-        <input className='inputbase' placeholder={placeholder}/>
+        <input className='inputbase-root' placeholder={placeholder}/>
     )
 }
 
