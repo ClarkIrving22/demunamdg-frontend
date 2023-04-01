@@ -1,0 +1,16 @@
+.div-containerviewusers {
+    display: flex;
+    height: 35px;
+    gap: 10px;
+}
+
+.div-busqueda-selectoption {
+    width: 150px;
+    height: 100%;
+}
+
+.div-inputbase {
+    
+    width: 200px;
+    height: 100%;
+}
