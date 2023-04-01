@@ -1,8 +1,7 @@
-import { Sidebar, Menu, MenuItem, useProSidebar } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import './styles.css'
 
 const SideBar = () => {
-    const { collapseSidebar } = useProSidebar();
     return(
         <div className="div-sidebar-root">
             <Sidebar>
