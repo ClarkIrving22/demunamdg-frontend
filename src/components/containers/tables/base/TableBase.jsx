@@ -5,13 +5,12 @@ const TableBase = ({
     UsersData
 }) => {
     const renderRow = (UsersData) => {
-        const fullName = `${UsersData.apellidopaterno} ${UsersData.apellidomaterno} ${UsersData.nombres}`
         const birthDate = UsersData.fechanac || '----'
         const phoneNumber = UsersData.telefono || '----'
     
         return (
           <tr key={UsersData.dni} className="tabla-root-tbody-tr">
-            <td className="tabla-root-td">{fullName}</td>
+            <td className="tabla-root-td">{UsersData.apellidosynombres}</td>
             <td className="tabla-root-td">{UsersData.dni}</td>
             <td className="tabla-root-td">{birthDate}</td>
             <td className="tabla-root-td">{phoneNumber}</td>
