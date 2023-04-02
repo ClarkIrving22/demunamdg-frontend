@@ -20,34 +20,35 @@
     position: sticky;
     top: 0;
     z-index: 1;
-
-    text-align: left;
-    background-color: var(--blue_grey_500);
-	color: #ffffff;
-	font-weight: lighter;
-}
-
-.tabla-root-th{
     padding: 12px 10px;
+    text-align: left;
+    background: var(--blue_grey_500);
+	color: white;
+	font-weight: lighter;
 }
 
 .tabla-root-td {    
     padding: 8px 10px;
-}
-
-.tabla-root-td {
     border-top: 1px solid var(--blue_grey_500);
     /*border-bottom: 1px solid #607D8B;*/   
 }
 
-.tabla-root-tbody-tr:hover {
-    background: var(--blue_grey_100);
+/*In order to keep the first column static*/
+/*
+.tabla-root-th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
 }
 
-#numero_filas{
-    margin-top: 5px;
-    font-family: "Roboto", sans-serif;
-    font-size: var(--font-size_general);   
+.tabla-root-td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}*/
+
+.tabla-root-tbody-tr:hover {
+    background: var(--blue_grey_100);
 }
 
 /* width and height*/
@@ -62,16 +63,19 @@
     box-shadow: inset 0 0 5px grey; 
     border-radius: 10px;
 }*/
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--blue_grey_100);
     border-radius: 10px;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--blue_grey_200);
 }
-
 /*Track end (1)*/
+
+#numero_filas {
+    margin-top: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: var(--font-size_general);   
+}
