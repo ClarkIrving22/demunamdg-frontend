@@ -1,20 +1,21 @@
 import './styles.css'
+import PropTypes from 'prop-types'
 
 const TableBase = ({
-    datarow=[]
+    UsersData
 }) => {
-    const renderRow = (datarow) => {
-        const fullName = `${datarow.apellidopaterno} ${datarow.apellidomaterno} ${datarow.nombres}`
-        const birthDate = datarow.fechanac || '----'
-        const phoneNumber = datarow.telefono || '----'
+    const renderRow = (UsersData) => {
+        const fullName = `${UsersData.apellidopaterno} ${UsersData.apellidomaterno} ${UsersData.nombres}`
+        const birthDate = UsersData.fechanac || '----'
+        const phoneNumber = UsersData.telefono || '----'
     
         return (
-          <tr key={datarow.dni} className="tabla-root-tbody-tr">
+          <tr key={UsersData.dni} className="tabla-root-tbody-tr">
             <td className="tabla-root-td">{fullName}</td>
-            <td className="tabla-root-td">{datarow.dni}</td>
+            <td className="tabla-root-td">{UsersData.dni}</td>
             <td className="tabla-root-td">{birthDate}</td>
             <td className="tabla-root-td">{phoneNumber}</td>
-            <td className="tabla-root-td">{datarow.direccion}</td>
+            <td className="tabla-root-td">{UsersData.direccion}</td>
             <td className="tabla-root-td">Edit</td>
           </tr>
         )
@@ -34,11 +35,19 @@ const TableBase = ({
                     </tr>
                 </thead>
                     <tbody>
-                        { datarow.map(datarow => renderRow(datarow)) }
+                        { UsersData.map(UsersData => renderRow(UsersData)) }
                     </tbody>
             </table>
         </div>
     )
+}
+
+TableBase.propTypes = {
+    UsersData: PropTypes.array,
+}
+
+TableBase.defaultProps = {
+    UsersData: [],
 }
 
 export default TableBase

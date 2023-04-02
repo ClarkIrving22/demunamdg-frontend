@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
 const ContainerViewUsers = ({
-    UsersData=[]
+    UsersData
 }) => {
     return(
         <div className="div-containerviewusers">
@@ -19,10 +19,18 @@ const ContainerViewUsers = ({
                 </div>
             </div>
             <div className="div-tabla-usuarios">
-                <TableBase datarow={UsersData}/>
+                <TableBase UsersData={UsersData}/>
             </div>
         </div>
     )
+}
+
+ContainerViewUsers.propTypes = {
+    UsersData: PropTypes.array,
+}
+
+ContainerViewUsers.defaultProps = {
+    UsersData: [],
 }
 
 export default ContainerViewUsers
