@@ -5,9 +5,10 @@ II. Step to Run the project:
 Commands:
 1. npm install
 2. npm install react-pro-sidebar
-3. npm install @mui/material @emotion/react @emotion/styled
-4. npm install @mui/icons-material
-5. npm run dev
+3. npm install prop-types
+4. npm install @mui/material @emotion/react @emotion/styled
+5. npm install @mui/icons-material
+6. npm run dev
 
 
 III. Branching flow and rules:

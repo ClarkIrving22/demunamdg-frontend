@@ -1,15 +1,23 @@
+.div-containerviewusers {
+    width: 100%;
+}
+
 .div-busqueda {
     display: flex;
     height: 35px;
     gap: 10px;
 }
 
-.div-selectoption {
+.div-selectbusqueda {
     width: 150px;
     height: 100%;
 }
 
-.div-inputbase {    
+.div-inputbusqueda {    
     width: 200px;
     height: 100%;
+}
+
+.div-tabla-usuarios {
+    margin-top: 10px;
 }

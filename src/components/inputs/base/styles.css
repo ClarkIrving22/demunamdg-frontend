@@ -11,7 +11,7 @@
     border-radius: 5px;
     background: white;
 
-    /*For let the user set the height correctly*/
+    /*For let the user set the height or width correctly*/
     box-sizing:border-box;
 }
 
