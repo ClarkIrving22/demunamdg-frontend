@@ -12,7 +12,7 @@ const ContainerViewUsers = ({
         <div className="div-containerviewusers">
             <div className="div-busqueda">
                 <div className="div-selectbusqueda">
-                    <SelectOption items={["Nombres", "DNI", "Teléfono", "Direccion"]}/>
+                    <SelectOption items={["Nombres", "DNI", "Teléfono", "Dirección"]}/>
                 </div>
                 <div className="div-inputbusqueda">
                     <InputBase placeholder='Ingrese texto a buscar'/>
