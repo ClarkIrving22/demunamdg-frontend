@@ -1,3 +1,20 @@
+/*Track start (1)*/
+/*
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}*/
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--blue_grey_100);
+    border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue_grey_200);
+}
+/*Track end (1)*/
+
 .div-containerviewusers {
     width: 100%;
     height: 100%;
@@ -21,6 +38,8 @@
 
 .div-tabla-usuarios {
     margin-top: 10px;
-    width: 100%;
-    height: 450px;
+    overflow-y: auto; /* enable vertical scrolling */
+    overflow-x: auto;
+    max-height: 500px; /* set maximum height for the wrapper */
+    border: 3px solid var(--blue_grey_500);
 }
