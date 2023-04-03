@@ -57,9 +57,3 @@
 .IconButton:hover .Icon{
     color: var(--blue_grey_500);
 }
-
-/* width and height*/
-::-webkit-scrollbar{
-    width: 12px;
-    height: 12px;    
-}

@@ -13,6 +13,12 @@
 ::-webkit-scrollbar-thumb:hover {
     background: var(--blue_grey_200);
 }
+
+/* width and height*/
+::-webkit-scrollbar{
+    width: 12px;
+    height: 12px;    
+}
 /*Track end (1)*/
 
 .div-containerviewusers {
@@ -42,4 +48,8 @@
     overflow-x: auto;
     max-height: 500px; /* set maximum height for the wrapper */
     border: 3px solid var(--blue_grey_500);
+}
+
+.div-texto-numerofilas {
+    margin-top: 5px;
 }

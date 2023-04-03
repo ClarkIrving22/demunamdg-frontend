@@ -42,7 +42,7 @@ const ViewUsers = () => {
             const userValueToMatch = user[keyToFilter].toLowerCase()
             return userValueToMatch.includes(valueToFilter)
         })
-        setUsersToDisplay(usersFiltered)        
+        setUsersToDisplay(usersFiltered)
     }, [users, selectoptionSelectedValue, searchInputValue])
 
     const selectoptionHandleOnChange = (event) => {
@@ -65,7 +65,9 @@ const ViewUsers = () => {
                 searchInputValue={searchInputValue}
                 searchInputPlaceHolder='Ingrese texto a buscar'
 
-                UsersData={usersToDisplay}/>
+                UsersData={usersToDisplay}
+                
+                numberOfRowsText={"Mostrando "+usersToDisplay.length+" de "+users.length+" elementos"}/>
         </LayoutFullScreen>
     )
 }

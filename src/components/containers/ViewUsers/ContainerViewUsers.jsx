@@ -2,6 +2,7 @@ import './styles.css'
 import SelectOption from '../../inputs/selectoption'
 import InputBase from '../../inputs/base'
 import TableBase from '../../tables/base'
+import TextBase from '../../text/base'
 import PropTypes from 'prop-types'
 
 const ContainerViewUsers = ({
@@ -11,7 +12,8 @@ const ContainerViewUsers = ({
     searchInputHandleOnChange,
     searchInputValue,
     searchInputPlaceHolder,
-    UsersData
+    UsersData,
+    numberOfRowsText
 }) => {
     return(
         <div className="div-containerviewusers">
@@ -31,6 +33,9 @@ const ContainerViewUsers = ({
             </div>
             <div className="div-tabla-usuarios">
                 <TableBase UsersData={UsersData}/>
+            </div>
+            <div className="div-texto-numerofilas">
+                <TextBase texto={numberOfRowsText}/>
             </div>
         </div>
     )
