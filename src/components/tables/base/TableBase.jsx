@@ -20,16 +20,16 @@ const TableBase = ({
             <td className="tabla-root-td">{phoneNumber}</td>
             <td className="tabla-root-td">{UsersData.direccion}</td>
             <td className="tabla-root-td">
-                <Tooltip title="Editar" placement="top-end" arrow>
+                {/*<Tooltip title="Editar" placement="top-end" arrow>*/}
                     <IconButton className="IconButton">
                         <EditIcon className="Icon" sx={{color: "#FB8C00"}}/>
                     </IconButton>
-                </Tooltip>
-                <Tooltip title="Eliminar" placement="top-end" arrow>
+                {/*</Tooltip>*/}
+                {/*<Tooltip title="Eliminar" placement="top-end" arrow>*/}
                     <IconButton className="IconButton">
                         <DeleteIcon className="Icon" sx={{color: "#FF5722"}}/>
                     </IconButton>                    
-                </Tooltip>                
+                {/*</Tooltip>*/}
             </td>
           </tr>
         )
