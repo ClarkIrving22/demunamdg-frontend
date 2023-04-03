@@ -23,6 +23,7 @@ const ViewUsers = () => {
         fetchUsers()
     }, [])
 
+    //Search functionality
     useEffect(() => {
         if(searchInputValue === ""){
             setUsersToDisplay(users)
